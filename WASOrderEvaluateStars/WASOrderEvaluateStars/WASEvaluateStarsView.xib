@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WASEvaluateStarsView" customModule="WASOrderEvaluateStars" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRn-5t-hza">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8W-Tz-amc">
+                            <rect key="frame" x="0.0" y="0.0" width="75" height="103"/>
+                            <state key="normal" image="evaluatestar_nor"/>
+                            <state key="selected" image="evaluatestar_pre"/>
+                            <connections>
+                                <action selector="sratClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="T1Y-Tx-DhZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvs-ng-ce9">
+                            <rect key="frame" x="75" y="0.0" width="75" height="103"/>
+                            <state key="normal" image="evaluatestar_nor"/>
+                            <state key="selected" image="evaluatestar_pre"/>
+                            <connections>
+                                <action selector="sratClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="u7T-ZC-s9e"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWr-IR-hUf">
+                            <rect key="frame" x="150" y="0.0" width="75" height="103"/>
+                            <state key="normal" image="evaluatestar_nor"/>
+                            <state key="selected" image="evaluatestar_pre"/>
+                            <connections>
+                                <action selector="sratClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="QM9-m6-i95"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Uj-of-8Rm">
+                            <rect key="frame" x="225" y="0.0" width="75" height="103"/>
+                            <state key="normal" image="evaluatestar_nor"/>
+                            <state key="selected" image="evaluatestar_pre"/>
+                            <connections>
+                                <action selector="sratClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="5E3-WO-MTf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASt-vt-Vxy">
+                            <rect key="frame" x="300" y="0.0" width="75" height="103"/>
+                            <state key="normal" image="evaluatestar_nor"/>
+                            <state key="selected" image="evaluatestar_pre"/>
+                            <connections>
+                                <action selector="sratClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="r0m-hG-pcd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="SWr-IR-hUf" firstAttribute="width" secondItem="W8W-Tz-amc" secondAttribute="width" id="0n2-Yd-jgz"/>
+                        <constraint firstItem="9Uj-of-8Rm" firstAttribute="width" secondItem="W8W-Tz-amc" secondAttribute="width" id="KMy-Kr-fNX"/>
+                        <constraint firstItem="xvs-ng-ce9" firstAttribute="width" secondItem="W8W-Tz-amc" secondAttribute="width" id="jNh-l0-se9"/>
+                        <constraint firstItem="ASt-vt-Vxy" firstAttribute="width" secondItem="W8W-Tz-amc" secondAttribute="width" id="qDU-Zv-D3f"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cRn-5t-hza" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="1ZO-fI-doU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cRn-5t-hza" secondAttribute="trailing" id="8Jl-3R-r56"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="cRn-5t-hza" secondAttribute="bottom" id="alf-i9-fkg"/>
+                <constraint firstItem="cRn-5t-hza" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="oF9-Hx-dn9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="star2" destination="xvs-ng-ce9" id="CLS-qw-4od"/>
+                <outlet property="star3" destination="SWr-IR-hUf" id="p8s-nO-uQb"/>
+                <outlet property="star4" destination="9Uj-of-8Rm" id="jIh-FM-72o"/>
+                <outlet property="star5" destination="ASt-vt-Vxy" id="PJR-H5-HPm"/>
+                <outlet property="starOne" destination="W8W-Tz-amc" id="Ti9-Qr-Lil"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="62.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="evaluatestar_nor" width="26" height="26"/>
+        <image name="evaluatestar_pre" width="26" height="26"/>
+    </resources>
+</document>
