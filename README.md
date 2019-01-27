@@ -1,2 +1,2 @@
 # OrderEvaluateStars
-evaluate an an order with Stars
+evaluate an order with Stars
